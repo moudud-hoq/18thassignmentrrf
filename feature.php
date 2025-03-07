@@ -3,7 +3,7 @@
 
 
     <!--Four DIv-->
-    <section class="fourdiv" style="display: flex; flex-direction: column; gap: 60px;">
+    <section class="fourdiv" style="display: flex; flex-direction: column; gap: 60px; margin: 80px 0;">
 
         <!--transform area-->
         <section class="transform">
