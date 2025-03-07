@@ -25,6 +25,18 @@
 </head>
 
 <body>
+    <?php
+    function is_active($check)
+    {
+        $request_uri = $_SERVER['REQUEST_URI'];
+        $search = strpos($request_uri, $check);
+
+        if ($search !== false) {
+            return 'active';
+        }
+    }
+
+    ?>
 
 
     <section style="background-color: #FFF9F3;" class="wheat-bg">
@@ -41,10 +53,10 @@
                         <nav>
                             <ul class="menu-ul">
                                 <li><a href="feature.php" class="li-feature">Feature</a></li>
-                                <li><a href="index.php">Home</a></li>
-                                <li><a href="about.php">About</a></li>
-                                <li><a href="contact.php">Contact</a></li>
-                                <li><a href="others.php">Others</a></li>
+                                <li><a class="<?php echo is_active('index') ?>" href="index.php">Home</a></li>
+                                <li><a class="<?php echo is_active('about') ?>" href="about.php" href="about.php">About</a></li>
+                                <li><a class="<?php echo is_active('contact') ?>" href="contact.php" href="contact.php">Contact</a></li>
+                                <li><a class="<?php echo is_active('others') ?>" href="others.php" href="others.php">Others</a></li>
                             </ul>
                         </nav>
                     </div>
