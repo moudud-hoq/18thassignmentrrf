@@ -2,8 +2,8 @@
 
 
 
-<!--White Section-->
-<!--Dark Blue Area-->
+<!--White Section and Dark Blue Area-->
+<!---->
 <section class="dark-blue">
         <div class="dba-text-boxs">
             <h1 style="font-size: 50px; text-align: left; line-height: 1.1;"> Beautiful designs, <br> Endess
